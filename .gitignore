@@ -1,0 +1,41 @@
+# Private / machine-specific artifacts
+logs/
+deps/
+evidence/
+presentation/
+*.zip
+*.db3
+*.db3-wal
+*.db3-shm
+*.mcap
+*.bag
+*.bag.active
+*.sqlite3
+*.deb
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+*.tmp
+*.bak
+*~
+# ROS and Python generated files
+build/
+install/
+log/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+# IDE / platform
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

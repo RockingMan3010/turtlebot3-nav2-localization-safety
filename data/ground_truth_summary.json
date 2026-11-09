@@ -1,0 +1,55 @@
+{
+  "calibration": {
+    "world_to_map_dx_m": -0.0,
+    "world_to_map_dy_m": -0.025,
+    "world_to_map_yaw_deg": -1.0,
+    "boundary_mean_nearest_occupied_cell_m": 0.0027,
+    "boundary_median_nearest_occupied_cell_m": 0.0,
+    "map_resolution_m": 0.05,
+    "landmark_count": 9,
+    "method": "local geometry registration: nine cylinder collision boundaries (SDF) against map occupancy cells; does not use AMCL/robot pose",
+    "uncertainty": "resolution 0.05 m; local fit window +/-0.2m, +/-5deg; geometry/template approximations; NOT globally unique without more landmarks"
+  },
+  "results": {
+    "A": {
+      "ground_truth_count": 453,
+      "amcl_total": 6,
+      "time_aligned_pairs": 5,
+      "gt_timestamp_span_s": 15.368,
+      "max_nearest_gt_stamp_gap_s": 0.013,
+      "map_xy_rmse_m": 0.01518,
+      "map_xy_mae_m": 0.0144,
+      "map_xy_max_m": 0.01928,
+      "yaw_mean_abs_error_deg": 0.77,
+      "matched_time_error_m": [
+        0.01525,
+        0.01446,
+        0.00544,
+        0.01757,
+        0.01928
+      ],
+      "validity": "simulation ground truth, header.stamp interpolation, static map landmark calibration; one run per condition"
+    },
+    "B": {
+      "ground_truth_count": 527,
+      "amcl_total": 7,
+      "time_aligned_pairs": 6,
+      "gt_timestamp_span_s": 17.884,
+      "max_nearest_gt_stamp_gap_s": 0.014,
+      "map_xy_rmse_m": 0.0136,
+      "map_xy_mae_m": 0.01274,
+      "map_xy_max_m": 0.01968,
+      "yaw_mean_abs_error_deg": 0.915,
+      "matched_time_error_m": [
+        0.01031,
+        0.01558,
+        0.01636,
+        0.01968,
+        0.0067,
+        0.00782
+      ],
+      "validity": "simulation ground truth, header.stamp interpolation, static map landmark calibration; one run per condition"
+    }
+  },
+  "warning": "One instrumented run each. Do not infer EKF superiority. RMSE conditional on landmark registration resolution and AMCL stamp semantics."
+}

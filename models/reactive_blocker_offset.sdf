@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="group_e_reactive_blocker_offset">
+    <static>true</static>
+    <link name="body">
+      <collision name="collision">
+        <geometry><box><size>0.16 0.16 0.45</size></box></geometry>
+      </collision>
+      <visual name="visual">
+        <geometry><box><size>0.16 0.16 0.45</size></box></geometry>
+        <material>
+          <ambient>1.0 0.16 0.16 1.0</ambient>
+          <diffuse>1.0 0.16 0.16 1.0</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

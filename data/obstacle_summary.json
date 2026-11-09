@@ -1,0 +1,15 @@
+{
+  "offset_config_successes": 3,
+  "offset_config_attempts": 3,
+  "mean_offset_trial_wall_time_sec": 35.004,
+  "mean_unadjusted_goal_xy_offset_m": 0.04324,
+  "max_unadjusted_goal_xy_offset_m": 0.0538,
+  "max_pitch_rad": 0.00662,
+  "offset_config_post_obstacle_plans": [
+    19,
+    21,
+    16
+  ],
+  "offset_config_bag_qa_pass": true,
+  "caution": "Three trials only; no statistical guarantee, independent truth alignment, collision monitor certification, or dynamic-obstacle performance comparison."
+}

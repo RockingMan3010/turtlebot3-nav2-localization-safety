@@ -1,0 +1,52 @@
+{
+  "project": "TurtleBot3 Waffle / ROS 2 Humble / Gazebo Classic / Nav2",
+  "context": "Individually implemented academic Group E Task 2",
+  "ab": {
+    "A": {
+      "setup": "wheel odometry + AMCL",
+      "success": 3,
+      "trials": 3,
+      "mean_s": 4.347
+    },
+    "B": {
+      "setup": "EKF odometry + AMCL",
+      "success": 3,
+      "trials": 3,
+      "mean_s": 4.104
+    },
+    "amcl_global_localization_in_both": true
+  },
+  "dynamic_obstacles": {
+    "trials": 5,
+    "offset_success": 3,
+    "offset_attempts": 3,
+    "trial2_action_succeeded_but_world_goal_error_m": 0.85047
+  },
+  "ground_truth": {
+    "A": {
+      "aligned_pairs": 5,
+      "xy_rmse_m": 0.01518
+    },
+    "B": {
+      "aligned_pairs": 6,
+      "xy_rmse_m": 0.0136
+    },
+    "map_resolution_m": 0.05,
+    "note": "Locally registered simulator geometry, limited pairs, not certified absolute accuracy"
+  },
+  "collision_monitor": {
+    "velocity_source": "controlled injected Twist at monitor input; Nav2 goal idle",
+    "clear_before_travel_m": 0.1877,
+    "hazard_positive_input": 57,
+    "hazard_zero_output": 21,
+    "hazard_positive_output": 0,
+    "hazard_settled_travel_m": 0.0001,
+    "clear_after_travel_m": 0.249
+  },
+  "rviz_demo": {
+    "nav2_success": true,
+    "wall_s": 6.326,
+    "uncalibrated_goal_xy_distance_m": 0.11243,
+    "not_independent_ab_trial": true
+  }
+}

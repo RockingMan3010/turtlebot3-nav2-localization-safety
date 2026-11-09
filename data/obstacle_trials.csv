@@ -1,0 +1,6 @@
+trial,setup,nav2_action_result,world_goal_xy_offset_m,physical_pose_sanity,final_pitch_rad,elapsed_wall_s,preplanned_m,obstacle_world_x,obstacle_world_y,rosbag_messages,rosbag_duration_s,bag_topic_qa,pre_insertion_plan_messages,post_insertion_plan_messages,post_insertion_cmd_vel_messages,post_insertion_stop_command_samples,post_insertion_turn_command_samples,post_insertion_nav_turn_commands,min_frontal_lidar_pre_m,min_frontal_lidar_post_m,post_obstacle_cost_cell_max
+1,wide_center,TaskResult.FAILED,1.04763,False,0.006624,39.223,1.6749,-1.15,-0.5,14525,45.85,True,5,18,465,215,121,45,1.834,0.12,99
+2,narrow_center,TaskResult.SUCCEEDED,0.85047,False,0.274917,26.564,1.6749,-0.95,-0.5,10395,32.492,True,5,17,395,61,242,116,1.823,0.12,99
+3,offset,TaskResult.SUCCEEDED,0.02893,True,0.006622,37.027,1.6749,-1.15,-0.32,13625,42.883,True,4,19,528,98,243,118,1.805,0.307,100
+4,offset,TaskResult.SUCCEEDED,0.0538,True,0.006608,43.12,1.6716,-1.15,-0.32,15648,49.194,True,4,21,604,174,180,84,1.761,0.56,99
+5,offset,TaskResult.SUCCEEDED,0.04699,True,0.006619,24.866,1.6749,-1.15,-0.32,9872,31.065,True,4,16,373,79,179,85,1.82,0.426,99

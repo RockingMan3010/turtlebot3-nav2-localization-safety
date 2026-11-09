@@ -1,0 +1,22 @@
+name: Offline source and evidence validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  evidence-and-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate Python syntax (no ROS installation required)
+        run: python -m compileall -q scripts launch tools
+      - name: Verify curated evidence is internally consistent
+        run: python tools/validate_evidence.py
+      - name: Validate local documentation and media links
+        run: python tools/validate_links.py
